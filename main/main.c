@@ -7,7 +7,6 @@
 #include "common.h"
 #include "gap.h"
 #include "gatt_svc.h"
-#include "led.h"
 #include "EnGet.h"
 
 /* Library function declarations */
@@ -67,8 +66,8 @@ static void heart_rate_task(void *param) {
         //ESP_LOGI(TAG, "温湿度心跳");
 
         UpDateTH();
-        send_temperature_indication();
-        send_humidity_indication();
+        UpDataBattry();
+        send_indication();
 
         /* Sleep */
         vTaskDelay(pdMS_TO_TICKS(1000));
@@ -83,9 +82,7 @@ void app_main(void) {
     int rc;
     esp_err_t ret;
 
-    /* LED initialization */
-    led_init();
-
+    InitADC();
     ESP_ERROR_CHECK(i2c_master_init());
     ESP_LOGI(TAG, "I2C initialized successfully");
 

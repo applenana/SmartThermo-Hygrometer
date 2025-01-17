@@ -25,7 +25,6 @@ void gatt_svr_register_cb(struct ble_gatt_register_ctxt *ctxt, void *arg);
 void gatt_svr_subscribe_cb(struct ble_gap_event *event);
 
 /* 通知函数 */
-void send_temperature_indication(void);
-void send_humidity_indication(void);
+void send_indication(void);
 
 #endif // GATT_SVR_H

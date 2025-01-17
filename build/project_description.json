@@ -1191,11 +1191,11 @@
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "bt", "nvs_flash", "esp_driver_gpio", "driver", "espressif__led_strip" ],
+            "priv_reqs": [ "bt", "nvs_flash", "esp_driver_gpio", "driver", "esp_adc", "espressif__led_strip" ],
             "managed_reqs": [],
             "managed_priv_reqs": [ "espressif__led_strip" ],
             "file": "C:/Users/mi/Desktop/NimBLE_GATT_Server/build/esp-idf/main/libmain.a",
-            "sources": [ "C:/Users/mi/Desktop/NimBLE_GATT_Server/main/main.c", "C:/Users/mi/Desktop/NimBLE_GATT_Server/main/src/EnGet.c", "C:/Users/mi/Desktop/NimBLE_GATT_Server/main/src/gap.c", "C:/Users/mi/Desktop/NimBLE_GATT_Server/main/src/gatt_svc.c", "C:/Users/mi/Desktop/NimBLE_GATT_Server/main/src/led.c" ],
+            "sources": [ "C:/Users/mi/Desktop/NimBLE_GATT_Server/main/main.c", "C:/Users/mi/Desktop/NimBLE_GATT_Server/main/src/EnGet.c", "C:/Users/mi/Desktop/NimBLE_GATT_Server/main/src/gap.c", "C:/Users/mi/Desktop/NimBLE_GATT_Server/main/src/gatt_svc.c" ],
             "include_dirs": [ "./include" ]
         },
         "mbedtls": {
@@ -2788,7 +2788,7 @@
             "dir": "C:/Users/mi/Desktop/NimBLE_GATT_Server/main",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "bt", "nvs_flash", "esp_driver_gpio", "driver", "espressif__led_strip" ],
+            "priv_reqs": [ "bt", "nvs_flash", "esp_driver_gpio", "driver", "esp_adc", "espressif__led_strip" ],
             "managed_reqs": [],
             "managed_priv_reqs": [ "espressif__led_strip" ],
             "include_dirs": [ "./include" ]

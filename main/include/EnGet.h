@@ -16,10 +16,16 @@
 /* Public function declarations */
 float GetTemp(void);
 float GetHumi(void);
+float GetVoltage(void);
+float GetBatteryPercentage(void);
 esp_err_t i2c_master_init(void);
 esp_err_t sht40_read_measurement(float *temperature, float *humidity);
+void InitADC(void);
 void UpDateTH(void);
+void UpDataBattry(void);
 extern float temperature; // 声明全局变量
 extern float humidity;    // 声明全局变量
+extern float batteryVoltage;
+extern float batteryPercentage;
 
 #endif // ENGET_H
